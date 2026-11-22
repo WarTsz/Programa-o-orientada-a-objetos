@@ -1,0 +1,10 @@
+Pagamento concluído:
+Valor: 100360.0
+Descrição: Dinheiro que devo no serasa
+Data do pagamento: 2026-11-18
+Valor da taxa: 3640.0000000000005
+Pagamento concluído:
+Valor: 100360.0
+Descrição: Dinheiro que devo no serasa
+Data do pagamento: 2026-11-18
+Valor da taxa: 3640.0000000000005

@@ -62,3 +62,67 @@ NOME:Roberto
 IDADE:13
 CPF:005
 Bimestre faltando:1
+NOME:Pedro
+IDADE:11
+CPF:002
+Bimestre faltando:4
+NOME:Pedro
+IDADE:11
+CPF:002
+Bimestre faltando:3
+NOME:Pedro
+IDADE:11
+CPF:002
+Bimestre faltando:2
+NOME:Pedro
+IDADE:11
+CPF:002
+Bimestre faltando:1
+NOME:Maria
+IDADE:13
+CPF:003
+Bimestre faltando:4
+NOME:Maria
+IDADE:13
+CPF:003
+Bimestre faltando:3
+NOME:Maria
+IDADE:13
+CPF:003
+Bimestre faltando:2
+NOME:Maria
+IDADE:13
+CPF:003
+Bimestre faltando:1
+NOME:Jose
+IDADE:10
+CPF:004
+Bimestre faltando:4
+NOME:Jose
+IDADE:10
+CPF:004
+Bimestre faltando:3
+NOME:Jose
+IDADE:10
+CPF:004
+Bimestre faltando:2
+NOME:Jose
+IDADE:10
+CPF:004
+Bimestre faltando:1
+NOME:Roberto
+IDADE:13
+CPF:005
+Bimestre faltando:4
+NOME:Roberto
+IDADE:13
+CPF:005
+Bimestre faltando:3
+NOME:Roberto
+IDADE:13
+CPF:005
+Bimestre faltando:2
+NOME:Roberto
+IDADE:13
+CPF:005
+Bimestre faltando:1
