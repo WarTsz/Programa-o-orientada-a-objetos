@@ -1,4 +1,6 @@
 package transportadora;
+import java.util.ArrayList;
+
 import erros.*;
 import user.*;
 import transportadora.exibicao.*;
@@ -15,7 +17,7 @@ public class Central {
         // Principio (D) inversão de dependência: Os modulos de alto-nível não conversam com os de baixo nível, e sim com abstrações
         //Central só conhece a interface Exibivel, e não como ela implementa aqueles métodos (se salva em arquivo, se exibe em console...)
     }
-    public adicionarEnvio(Atendente atendente,Envio envio) {
+    public void adicionarEnvio(Atendente atendente,Envio envio) {
         if (atendente instanceof Gerente == false) {
             throw new IllegalArgumentException("ERRO!!!!");
         }
@@ -36,9 +38,9 @@ public class Central {
         for (int i=0;i<envios.size();i++) {
             valor+=envios.get(i).calcularTotal();
         }
-        registrador.enviar("TOTAL FATURADO: "+String.format("%d",valor));
+        registrador.enviar("TOTAL FATURADO: "+String.format("%f",valor));
     }
-    public void maisCaro() {
+    public void maisCaro(Atendente atendente) {
         if (atendente == null) {
             throw new IllegalArgumentException();
         }
@@ -47,13 +49,13 @@ public class Central {
             return;
         }
         else {
-            double maior = envios.get(i).calcularTotal();
+            double maior = envios.get(0).calcularTotal();
             for (int i=1;i<envios.size();i++) {
                 if (maior<envios.get(i).calcularTotal()) {
                     maior = envios.get(i).calcularTotal();
                 }
             }
-            registrador.enviar("VALOR MAIS CARO: "+String.format("%d",valor));
+            registrador.enviar("VALOR MAIS CARO: "+String.format("%f",maior));
         }
     }
 

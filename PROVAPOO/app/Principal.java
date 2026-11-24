@@ -1,6 +1,9 @@
 package app;
 import transportadora.*;
 import transportadora.exibicao.*;
+
+import java.time.LocalDate;
+
 import produto.*;
 import user.*;
 
@@ -18,16 +21,16 @@ public class Principal {
         try {
             Encomenda encomenda02 = new Encomenda("GTA6",-11,pessoa01);
         }
-        catch Exception e {}
+        catch (Exception e) {}
         Encomenda encomenda03 = new Encomenda("PC GAMER REALOFICIAL",7,pessoa02);
         Envio envio01 = new EnvioExpresso(encomenda01,LocalDate.now(),1250);
         Envio envio02 = new EnvioInternacional(encomenda03,LocalDate.now(),10000);
         Exibivel console01 = new ExibirConsole();
         Central CentralRealOficial = new Central(console01);
-        Central.adicionarEnvio(gerente01,envio01);
-        Central.adicionarEnvio(gerente01,envio02);
-        Central.faturamentoTotal(atendente01);
-        Central.maisCaro(atendente01);
+        CentralRealOficial.adicionarEnvio(gerente01,envio01);
+        CentralRealOficial.adicionarEnvio(gerente01,envio02);
+        CentralRealOficial.faturamentoTotal(atendente01);
+        CentralRealOficial.maisCaro(atendente01);
 
 
     }

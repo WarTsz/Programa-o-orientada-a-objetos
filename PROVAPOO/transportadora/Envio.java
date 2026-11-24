@@ -1,10 +1,13 @@
 package transportadora;
 import produto.*;
+
+import java.time.LocalDate;
+
 import erros.*;
 public abstract class Envio {
-    private Encomenda encomenda;
-    private LocalDate data;
-    private double preco_base;
+    protected Encomenda encomenda;
+    protected  LocalDate data;
+    protected double preco_base;
     public Envio(Encomenda encomenda,LocalDate data,double preco_base) throws PrecoInvalidoException,IllegalArgumentException {
         if (preco_base <=0) {
             throw new PrecoInvalidoException();
